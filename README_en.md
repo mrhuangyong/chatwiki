@@ -92,7 +92,7 @@ git clone https://github.com/zhimaAi/chatwiki.git
 **(2). Use Docker Compose to build and start the project**
 
 ```shell
-cd chatwiki
+cd chatwiki/docker
 docker compose up -d
 ```
 

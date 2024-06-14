@@ -77,7 +77,7 @@ git clone https://github.com/zhimaAi/chatwiki.git
 **(2).使用Docker Compose构建并启动项目**
 
 ```shell
-cd chatwiki
+cd chatwiki/docker
 docker compose up -d
 ```
 
