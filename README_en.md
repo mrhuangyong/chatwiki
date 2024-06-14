@@ -66,16 +66,6 @@ Before installing ChatWiki, you need to prepare a **Linux** server with internet
 
 - RAM: At least 4GB 
 
-  
-
-  After installing Docker, follow the steps below to install ChatWiki Community Edition: **(1). Clone or download the ChatWiki project code** ```shell git clone https://github.com/zhimaAi/chatwiki.git ``` **(2). Use Docker Compose to build and start the project** ```shell cd chatwiki docker compose up -d ``` **Deployment Manual** If you encounter any problems or have suggestions during the installation and deployment, you can [contact us](#contact-us) for help, or refer to the following documentation: - [One-click Deployment of ChatWiki Community Edition](https://www.yuque.com/zhimaxiaoshiwangluo/pggco1/wql8ekkylbwegbzo) - [How to Configure Model Providers and Supported Models](https://www.yuque.com/zhimaxiaoshiwangluo/pggco1/pn79lkvl53bo0xxm)   - [Local Model Deployment](https://www.yuque.com/zhimaxiaoshiwangluo/pggco1/evmy0rr9gr2gp2i0) - [How to Configure External Services and Domain Names for Receiving Push Notifications](#) (Note: The last link seems to be incomplete, and the section "contact us" is referenced but not provided in the text. You may need to provide the actual contact information or link to the contact section if available.)
-
-**准备工作**
-
-再安装ChatWiki之前，您需要准备一台具有联网功能的**linux**服务器，并确保服务器满足最低系统要求
-
-- Cpu：最低需要2 Core
-- RAM：最低需要4GB
 
 **Installation**
 
@@ -107,9 +97,7 @@ docker compose up -d
 - [One-click Deployment of ChatWiki Community Edition](https://www.yuque.com/zhimaxiaoshiwangluo/pggco1/wql8ekkylbwegbzo) 
 - [How to Configure Model Providers and Supported Models](https://www.yuque.com/zhimaxiaoshiwangluo/pggco1/pn79lkvl53bo0xxm)   
 - [Local Model Deployment](https://www.yuque.com/zhimaxiaoshiwangluo/pggco1/evmy0rr9gr2gp2i0) 
-- [How to Configure External Services and Domain Names for Receiving Push Notifications](#) 
-
-- https://www.yuque.com/zhimaxiaoshiwangluo/pggco1/nfk4slc95s4i8u4v)
+- [How to Configure External Services and Domain Names for Receiving Push Notifications](https://www.yuque.com/zhimaxiaoshiwangluo/pggco1/nfk4slc95s4i8u4v) 
 
 
 
