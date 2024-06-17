@@ -47,24 +47,6 @@ business scenarios.
 
 ---
 
-**Cloud Service**
-
-We will provide ChatWiki cloud services in July, allowing enterprises to test at no cost. The cloud service version will
-offer all the features of the community edition, so stay tuned.
-
-**Community Edition**
-
-As long as you follow the [ChatWiki Open Source License](https://github.com/zhimaAi/chatwiki/blob/main/LICENSE), any
-organization or individual can use our community edition for free, and it supports secondary development and
-commercialization. You can refer to [Deploying ChatWiki Community Edition](#quick-start) to quickly set up ChatWiki
-services on your server.
-
-<h3>Deploying ChatWiki Community Edition  <a name="quick-start"></a></h3>
-
----
-
-**Preparation**
-
 Before installing ChatWiki, you need to prepare a **Linux** server with internet connectivity and ensure that the server
 meets the minimum system requirements:
 
@@ -105,6 +87,34 @@ can [contact us](#contact-us) for help, or refer to the following documentation:
 - [How to Configure Model Providers and Supported Models](https://www.yuque.com/zhimaxiaoshiwangluo/pggco1/pn79lkvl53bo0xxm)
 - [Local Model Deployment](https://www.yuque.com/zhimaxiaoshiwangluo/pggco1/evmy0rr9gr2gp2i0)
 - [How to Configure External Services and Domain Names for Receiving Push Notifications](https://www.yuque.com/zhimaxiaoshiwangluo/pggco1/nfk4slc95s4i8u4v)
+- [Docker-Free Deployment of ChatWiki](https://www.yuque.com/zhimaxiaoshiwangluo/pggco1/klriercbhpy97o0g)
+- [How to Obtain the Large Model ApiKey](https://www.yuque.com/zhimaxiaoshiwangluo/pggco1/lx3ho90skq95dpdq)
+
+### UI
+
+---
+
+<p align="center">   <img src="./imgs/1.jpg" alt="1" width="30%" />   <img src="./imgs/2.jpg" alt="2" width="30%" />   <img src="./imgs/3.jpg" alt="3" width="30%" /> </p> <p align="center">   <img src="./imgs/4.jpg" alt="4" width="30%" />   <img src="./imgs/5.jpg" alt="5" width="30%" />   <img src="./imgs/6.jpg" alt="6" width="30%" /> </p> <p align="center">   <img src="./imgs/7.jpg" alt="7" width="30%" />   <img src="./imgs/8.jpg" alt="8" width="30%" />   <img src="./imgs/9.jpg" alt="9" width="30%" /> </p>
+
+### Architecture diagram
+
+---
+
+![Architecture diagram](imgs/Architecture diagram-en.jpg)
+
+### Technology Stack
+
+------
+
+- Frontend: vue.js
+- Backend: golang + python
+- Database: PostgreSQL 16 + pgvector + zhparser
+- Caching: redis 5.0
+- Web Service: nginx
+- Asynchronous Queue: nsq
+- Process Management: supervisor
+- Models: Supports models from OpenAI, Google Gemini, Claude3, Tongyi Qianwen, Wenxin Yiyi, Xunfei Xinghuo, Baichuan,
+  Tencent Hunyuan, etc.
 
 <h3>Contact Us <a name="contact-us"></a></h3>
 
@@ -113,8 +123,7 @@ can [contact us](#contact-us) for help, or refer to the following documentation:
 We welcome you to contact us for assistance or to provide suggestions to help us improve ChatWiki. You can reach us
 through the following methods:
 
-- **WeChat:** Scan the QR code below to add us as a friend on WeChat, and we will invite you to join the ChatWiki
-  discussion group.
+- **WeChat:** Join the ChatWiki Technical Exchange Group by Scanning the WeChat QR Code
 
   <img src="./imgs/contact-us.png" alt="">
 

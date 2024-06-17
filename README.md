@@ -37,20 +37,6 @@ ChatWiki为 AI 问答机器人提供了不同的使用渠道，支持H5链接、
 
 ---
 
-**云服务**
-
-我们将在7月提供ChatWiki云服务，企业可以零成本测试。云服务版将提供社区版的所有功能，敬请期待。
-
-**社区版**
-
-只要遵循[ChatWiki Open Source License](https://github.com/zhimaAi/chatwiki/blob/main/LICENSE)
-开源协议，任何组织和个人均可免费使用我们的社区版，并支持二次开发和商业化。您可以参考[部署Chatwiki社区版](#quick-start)
-快速在服务器中搭建ChatWiki服务。
-
-<h3>部署ChatWiki社区版  <a name="quick-start"></a></h3>
-
----
-
 **准备工作**
 
 再安装ChatWiki之前，您需要准备一台具有联网功能的**linux**服务器，并确保服务器满足最低系统要求
@@ -89,6 +75,34 @@ docker compose up -d
 - [如何配置模型供应商及支持的模型](https://www.yuque.com/zhimaxiaoshiwangluo/pggco1/pn79lkvl53bo0xxm)
 - [本地模型部署](https://www.yuque.com/zhimaxiaoshiwangluo/pggco1/evmy0rr9gr2gp2i0)
 - [如何配置对外服务和接收推送的域名](https://www.yuque.com/zhimaxiaoshiwangluo/pggco1/nfk4slc95s4i8u4v)
+- [免Docker部署ChatWiki](https://www.yuque.com/zhimaxiaoshiwangluo/pggco1/klriercbhpy97o0g)
+- [如何获取大模型ApiKey](https://www.yuque.com/zhimaxiaoshiwangluo/pggco1/lx3ho90skq95dpdq)
+
+### 界面
+
+---
+
+<p align="center">   <img src="./imgs/1.jpg" alt="1" width="30%" />   <img src="./imgs/2.jpg" alt="2" width="30%" />   <img src="./imgs/3.jpg" alt="3" width="30%" /> </p> <p align="center">   <img src="./imgs/4.jpg" alt="4" width="30%" />   <img src="./imgs/5.jpg" alt="5" width="30%" />   <img src="./imgs/6.jpg" alt="6" width="30%" /> </p> <p align="center">   <img src="./imgs/7.jpg" alt="7" width="30%" />   <img src="./imgs/8.jpg" alt="8" width="30%" />   <img src="./imgs/9.jpg" alt="9" width="30%" /> </p>
+
+### 技术架构
+
+---
+
+![Architecture diagram](imgs/Architecture diagram.png)
+
+### 技术栈
+
+---
+
+- 前端：vue.js
+- 后端：golang +python
+- 数据库：PostgreSQL16+pgvector+zhparser
+
+- 缓存：redis5.0
+- web服务：nginx
+- 异步队列：nsq
+- 进程管理：supervisor
+- 模型：支持OpenAI、Google Gemini、Claude3、通义千文、文心一言、讯飞星火、百川、腾讯混元等模型。
 
 <h3>联系我们 <a name="contact-us"></a></h3>
 
@@ -96,7 +110,7 @@ docker compose up -d
 
 欢迎联系我们获取帮助，或者提供建议帮助我们改善ChatWiki。您可以通过以下方式联系我们：
 
-- **微信：** 扫描下方二维码添加微信好友，我们将邀请您加入ChatWiki交流群。
+- **微信：** 使用微信扫码加入ChatWiki技术交流群
 
   <img src="./imgs/contact-us.png" alt="">
 
