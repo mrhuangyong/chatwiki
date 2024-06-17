@@ -88,7 +88,7 @@ docker compose up -d
 
 ---
 
-![Architecture diagram](imgs/Architecture diagram.png)
+![Architecture diagram](imgs/Architecture-diagram.png)
 
 ### 技术栈
 

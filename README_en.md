@@ -100,7 +100,7 @@ can [contact us](#contact-us) for help, or refer to the following documentation:
 
 ---
 
-![Architecture diagram](imgs/Architecture diagram-en.jpg)
+![Architecture diagram](imgs/Architecture-diagram-en.jpg)
 
 ### Technology Stack
 
